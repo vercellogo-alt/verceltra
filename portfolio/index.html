@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Lucas Fernandes da Silva — Estudante interessado em tecnologia, aprendizado contínuo e desenvolvimento de projetos práticos.">
+  <meta name="author" content="Lucas Fernandes da Silva">
+  <title>Lucas Fernandes da Silva | Portfólio</title>
+
+  <!-- Google Fonts: Space Grotesk (Títulos) e Inter (Textos) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Efeitos de iluminação de fundo globais -->
+  <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom-right" aria-hidden="true"></div>
+
+  <!-- Header Fixo com Menu de Navegação -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <a href="#inicio" class="brand-logo" aria-label="Ir para o início do portfólio">
+        <span class="logo-accent">&lt;</span>Lucas<span class="logo-dot">.</span>Fernandes<span class="logo-accent">/&gt;</span>
+      </a>
+
+      <!-- Botão Hambúrguer para Telas Pequenas -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu de navegação">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- Menu Principal -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#inicio" class="nav-link active">Início</a></li>
+          <li class="nav-item"><a href="#sobre" class="nav-link">Sobre mim</a></li>
+          <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+        <div class="nav-action-wrapper">
+          <a href="https://github.com/vercellogo-alt/AG4" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-header-github btn-github" id="btn-nav-github" aria-label="Acessar meu perfil e repositórios no GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" class="btn-icon-github" aria-hidden="true">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span>Meu GitHub</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Seção 1: Hero (Página Inicial) -->
+    <section id="inicio" class="hero-section" aria-label="Página inicial e apresentação">
+      <div class="hero-grid-pattern" aria-hidden="true"></div>
+      
+      <div class="hero-container">
+        <div class="hero-content">
+          <!-- Badge de Status Tecnológico -->
+          <div class="hero-badge">
+            <span class="badge-pulse"></span>
+            <span class="badge-text">Estudante de Tecnologia &bull; Desenvolvimento Prático</span>
+          </div>
+
+          <!-- Nome em Destaque -->
+          <h1 class="hero-title">
+            <span class="hero-greeting">Olá, meu nome é</span>
+            <span class="hero-name">Lucas Fernandes da Silva</span>
+          </h1>
+
+          <!-- Frase Principal de Impacto -->
+          <p class="hero-tagline">
+            &ldquo;Transformando curiosidade em conhecimento e conhecimento em projetos.&rdquo;
+          </p>
+
+          <!-- Texto de Apresentação Oficial -->
+          <p class="hero-description">
+            Sou um estudante interessado em tecnologia, sempre buscando aprender coisas novas, desenvolver minhas habilidades e transformar ideias em soluções práticas.
+          </p>
+
+          <!-- Grupo de Botões de Ação (CTAs) -->
+          <div class="hero-actions">
+            <a href="#projetos" class="btn btn-primary" id="btn-hero-projects">
+              <span>Conheça meus projetos</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <a href="#contato" class="btn btn-secondary" id="btn-hero-contact">
+              <span>Entre em contato</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Elemento Visual Interativo Hero (Card Tecnológico) -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="tech-card">
+            <div class="card-header-bar">
+              <span class="card-dot dot-red"></span>
+              <span class="card-dot dot-yellow"></span>
+              <span class="card-dot dot-green"></span>
+              <span class="card-title-text">lucas_profile.config</span>
+            </div>
+            <div class="code-body">
+              <p class="code-line"><span class="code-keyword">const</span> <span class="code-var">developer</span> = {</p>
+              <p class="code-line indent-1"><span class="code-prop">nome</span>: <span class="code-string">&quot;Lucas Fernandes da Silva&quot;</span>,</p>
+              <p class="code-line indent-1"><span class="code-prop">foco</span>: <span class="code-string">&quot;Aprendizado &amp; Prática&quot;</span>,</p>
+              <p class="code-line indent-1"><span class="code-prop">interesses</span>: [</p>
+              <p class="code-line indent-2"><span class="code-string">&quot;Tecnologia&quot;</span>,</p>
+              <p class="code-line indent-2"><span class="code-string">&quot;Desenvolvimento Web&quot;</span>,</p>
+              <p class="code-line indent-2"><span class="code-string">&quot;Soluções Práticas&quot;</span></p>
+              <p class="code-line indent-1">],</p>
+              <p class="code-line indent-1"><span class="code-prop">status</span>: <span class="code-string">&quot;Evoluindo constantemente&quot;</span>,</p>
+              <p class="code-line indent-1"><span class="code-prop">tccPrincipal</span>: <span class="code-string">&quot;CelsLife&quot;</span></p>
+              <p class="code-line">};</p>
+            </div>
+            <div class="card-footer-stats">
+              <div class="stat-item">
+                <span class="stat-value">100%</span>
+                <span class="stat-label">Dedicação</span>
+              </div>
+              <div class="stat-separator"></div>
+              <div class="stat-item">
+                <span class="stat-value">Curiosidade</span>
+                <span class="stat-label">Motor Principal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Indicador de Rolagem -->
+      <a href="#sobre" class="scroll-indicator" aria-label="Rolar para a seção seguinte">
+        <span class="scroll-text">Explorar portfólio</span>
+        <div class="mouse-icon">
+          <div class="mouse-wheel"></div>
+        </div>
+      </a>
+    </section>
+
+    <!-- Seção 2: Sobre Mim -->
+    <section id="sobre" class="about-section" aria-label="Sobre Lucas Fernandes da Silva">
+      <div class="about-container">
+        <!-- Cabeçalho da Seção -->
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            <span>Trajetória &amp; Valores</span>
+          </div>
+          <h2 class="section-title">Sobre mim</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Conteúdo Principal da Bio -->
+        <div class="about-intro">
+          <div class="about-quote-box">
+            <div class="quote-icon-wrapper" aria-hidden="true">
+              <svg class="quote-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+              </svg>
+            </div>
+            <p class="about-text">
+              Sou uma pessoa curiosa, que gosta de aprender e conhecer coisas novas. Busco desenvolver minhas habilidades por meio dos estudos técnicos e de projetos práticos. Meu objetivo é continuar evoluindo, adquirir experiência e transformar o conhecimento em soluções que façam a diferença.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3 Destaques Visuais (Pilares) -->
+        <div class="pillars-grid">
+          <!-- Pilar 1: Aprendizado contínuo -->
+          <div class="pillar-card">
+            <div class="pillar-glow" aria-hidden="true"></div>
+            <div class="pillar-icon-wrapper">
+              <svg class="pillar-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+              </svg>
+            </div>
+            <h3 class="pillar-title">Aprendizado contínuo</h3>
+            <p class="pillar-description">
+              Dedicação permanente aos estudos técnicos, explorando novas tecnologias e aprimorando fundamentos para evoluir a cada novo desafio.
+            </p>
+            <div class="pillar-tag">Foco &bull; Evolução</div>
+          </div>
+
+          <!-- Pilar 2: Interesse por tecnologia -->
+          <div class="pillar-card">
+            <div class="pillar-glow" aria-hidden="true"></div>
+            <div class="pillar-icon-wrapper">
+              <svg class="pillar-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <line x1="9" y1="1" x2="9" y2="4"></line>
+                <line x1="15" y1="1" x2="15" y2="4"></line>
+                <line x1="9" y1="20" x2="9" y2="23"></line>
+                <line x1="15" y1="20" x2="15" y2="23"></line>
+                <line x1="20" y1="9" x2="23" y2="9"></line>
+                <line x1="20" y1="14" x2="23" y2="14"></line>
+                <line x1="1" y1="9" x2="4" y2="9"></line>
+                <line x1="1" y1="14" x2="4" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="pillar-title">Interesse por tecnologia</h3>
+            <p class="pillar-description">
+              Curiosidade genuína pelo funcionamento de ecossistemas digitais modernos e pela inovação aplicada ao desenvolvimento de soluções.
+            </p>
+            <div class="pillar-tag">Curiosidade &bull; Inovação</div>
+          </div>
+
+          <!-- Pilar 3: Desenvolvimento de projetos -->
+          <div class="pillar-card">
+            <div class="pillar-glow" aria-hidden="true"></div>
+            <div class="pillar-icon-wrapper">
+              <svg class="pillar-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="pillar-title">Desenvolvimento de projetos</h3>
+            <p class="pillar-description">
+              Transformação do aprendizado teórico em prática, estruturando código limpo e construindo aplicações que solucionam necessidades reais.
+            </p>
+            <div class="pillar-tag">Prática &bull; Soluções</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 3: Meus Projetos -->
+    <section id="projetos" class="projects-section" aria-label="Meus projetos">
+      <div class="projects-container">
+        <!-- Cabeçalho da Seção -->
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            <span>Trabalhos &amp; Aplicações Práticas</span>
+          </div>
+          <h2 class="section-title">Meus projetos</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Aplicações desenvolvidas com foco em aprendizado prático, código estruturado e resolução de necessidades reais.
+          </p>
+        </div>
+
+        <!-- Grade de Projetos -->
+        <div class="projects-grid">
+          <!-- Card de Destaque: TCC CelsLife -->
+          <article class="project-card featured-project">
+            <div class="project-header">
+              <div class="project-badge">
+                <span class="badge-pulse"></span>
+                <span>Projeto Principal &bull; TCC</span>
+              </div>
+              <span class="project-type-tag">Plataforma Web</span>
+            </div>
+
+            <!-- Mockup Visual da Aplicação -->
+            <div class="project-preview" aria-hidden="true">
+              <div class="preview-browser-bar">
+                <div class="preview-dots">
+                  <span class="dot-red"></span>
+                  <span class="dot-yellow"></span>
+                  <span class="dot-green"></span>
+                </div>
+                <div class="preview-url-bar">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="lock-icon">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                  <span>https://celslife.com.br</span>
+                </div>
+              </div>
+
+              <!-- Banner Visual do CelsLife -->
+              <div class="preview-canvas">
+                <div class="preview-grid-bg"></div>
+                <div class="celslife-banner-content">
+                  <div class="celslife-brand-badge">
+                    <span class="celslife-icon-circle">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                      </svg>
+                    </span>
+                    <span class="celslife-logo-text">CelsLife</span>
+                  </div>
+                  <p class="celslife-preview-tagline">Plataforma Web &bull; Solução Prática</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Conteúdo Informativo -->
+            <div class="project-body">
+              <h3 class="project-title">CelsLife</h3>
+              <p class="project-description">
+                Projeto de Trabalho de Conclusão de Curso, desenvolvido para colocar conhecimentos em prática e apresentar uma solução por meio de uma plataforma própria.
+              </p>
+
+              <!-- Tags de Tecnologia e Metodologia -->
+              <div class="project-tech-tags">
+                <span class="tech-tag">Trabalho de Conclusão de Curso</span>
+                <span class="tech-tag">Plataforma Própria</span>
+                <span class="tech-tag">Desenvolvimento Web</span>
+                <span class="tech-tag">Solução Prática</span>
+              </div>
+
+              <!-- Ação Principal: Acessar TCC -->
+              <div class="project-action-wrapper">
+                <a href="https://celslife.com.br/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-project" id="btn-tcc-celslife">
+                  <span>Acessar meu TCC</span>
+                  <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card de Destaque do Projeto AG4 no GitHub -->
+          <article class="project-card featured-project ag4-project-card">
+            <div class="project-header">
+              <div class="project-badge">
+                <span class="badge-dot-blue"></span>
+                <span>Repositório Oficial &bull; GitHub</span>
+              </div>
+              <span class="project-type-tag">Código Aberto</span>
+            </div>
+
+            <!-- Mockup Visual do Repositório AG4 -->
+            <div class="project-preview" aria-hidden="true">
+              <div class="preview-browser-bar">
+                <div class="preview-dots">
+                  <span class="dot-red"></span>
+                  <span class="dot-yellow"></span>
+                  <span class="dot-green"></span>
+                </div>
+                <div class="preview-url-bar">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="lock-icon">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                  <span>https://github.com/vercellogo-alt/AG4</span>
+                </div>
+              </div>
+
+              <!-- Banner Visual do AG4 -->
+              <div class="preview-canvas ag4-preview-canvas">
+                <div class="preview-grid-bg"></div>
+                <div class="ag4-banner-content">
+                  <div class="ag4-brand-badge">
+                    <span class="ag4-icon-circle">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                      </svg>
+                    </span>
+                    <span class="ag4-logo-text">AG4</span>
+                  </div>
+                  <p class="ag4-preview-tagline">Repositório GitHub &bull; Código e Arquivos</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Conteúdo Informativo -->
+            <div class="project-body">
+              <h3 class="project-title">AG4</h3>
+              <p class="project-description">
+                Acesse este repositório para conferir o projeto e seus arquivos.
+              </p>
+
+              <!-- Tags de Tecnologia e Metodologia -->
+              <div class="project-tech-tags">
+                <span class="tech-tag">Repositório GitHub</span>
+                <span class="tech-tag">Controle de Versão</span>
+                <span class="tech-tag">Código Aberto</span>
+                <span class="tech-tag">Desenvolvimento</span>
+              </div>
+
+              <!-- Ação Principal: Ver projeto no GitHub -->
+              <div class="project-action-wrapper">
+                <a href="https://github.com/vercellogo-alt/AG4" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-project btn-github" id="btn-view-github" aria-label="Ver projeto AG4 no GitHub">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="btn-icon-github" aria-hidden="true">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>Ver projeto no GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 4: Contato -->
+    <section id="contato" class="contact-section" aria-label="Entre em contato">
+      <div class="contact-container">
+        <!-- Cabeçalho da Seção -->
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            <span>Comunicação &amp; Conexão</span>
+          </div>
+          <h2 class="section-title">Entre em contato</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Tem alguma ideia, oportunidade ou quer trocar conhecimentos? Entre em contato comigo!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Coluna 1: Informações e Botão Meu GitHub -->
+          <div class="contact-card contact-info-card">
+            <h3 class="contact-card-title">Canais de Conexão</h3>
+            <p class="contact-card-desc">
+              Acompanhe minhas atividades, repositórios e evolução técnica diretamente pelo GitHub. Sinta-se à vontade para conferir meus projetos ou enviar uma mensagem pelo formulário ao lado.
+            </p>
+
+            <div class="contact-highlight-box">
+              <span class="highlight-label">Perfil Oficial no GitHub</span>
+              <a href="https://github.com/vercellogo-alt/AG4" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-contact-github btn-github" id="btn-contact-github" aria-label="Acessar meu perfil e repositórios no GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="btn-icon-github" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>Meu GitHub</span>
+              </a>
+            </div>
+
+            <div class="contact-details-list">
+              <div class="contact-detail-item">
+                <span class="detail-label">Desenvolvedor:</span>
+                <span class="detail-value">Lucas Fernandes da Silva</span>
+              </div>
+              <div class="contact-detail-item">
+                <span class="detail-label">Foco:</span>
+                <span class="detail-value">Tecnologia &bull; Aprendizado Contínuo</span>
+              </div>
+              <div class="contact-detail-item">
+                <span class="detail-label">Repositório:</span>
+                <span class="detail-value">vercellogo-alt/AG4</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna 2: Formulário de Contato -->
+          <div class="contact-card contact-form-card">
+            <h3 class="contact-card-title">Envie uma mensagem</h3>
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Nome completo</label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="Seu nome" required minlength="3">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">E-mail</label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="seuemail@exemplo.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Mensagem</label>
+                <textarea id="contact-message" name="message" class="form-textarea" rows="4" placeholder="Escreva sua mensagem aqui..." required minlength="10"></textarea>
+              </div>
+
+              <div id="contact-form-status" class="form-status" role="alert" aria-live="polite"></div>
+
+              <button type="submit" class="btn btn-primary btn-submit-form" id="btn-submit-contact">
+                <span>Enviar mensagem</span>
+                <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <p class="form-notice">
+                * Demonstração funcional do formulário no cliente. Para contato imediato, acesse o botão "Meu GitHub".
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé do Site -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#inicio" class="brand-logo" aria-label="Voltar ao início">
+          <span class="logo-accent">&lt;</span>Lucas<span class="logo-dot">.</span>Fernandes<span class="logo-accent">/&gt;</span>
+        </a>
+        <p class="footer-desc">Portfólio pessoal e projetos práticos de tecnologia.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Links rápidos do rodapé">
+        <ul class="footer-links">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="https://github.com/vercellogo-alt/AG4" target="_blank" rel="noopener noreferrer" class="btn-github">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">
+        &copy; <span id="current-year">2026</span> Lucas Fernandes da Silva. Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

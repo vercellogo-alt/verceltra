@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-lucas-fernandes",
+  "version": "1.0.0",
+  "description": "Portfólio Pessoal moderno e tecnológico de Lucas Fernandes da Silva",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx -y serve . -l 5500",
+    "dev": "npx -y serve . -l 5500",
+    "serve": "python -m http.server 5500"
+  },
+  "keywords": [
+    "portfolio",
+    "html5",
+    "css3",
+    "vanilla-javascript"
+  ],
+  "author": "Lucas Fernandes da Silva",
+  "license": "MIT"
+}
